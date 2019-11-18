@@ -12,7 +12,7 @@ policies:
       - type: credential
         key: access_keys.last_rotated #change this to look at when it was created.
         value_type: age
-        value: 90
+        value: 180
         op: greater-than
   - name: iam-users-with-old-password
     *default-actions
